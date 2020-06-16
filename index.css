@@ -1,0 +1,111 @@
+body {
+    margin: 0 auto;
+    background-image: url('media/tile.jpg');
+    font-family: monospace;
+}
+
+h1 {
+    font-family: cursive;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 72px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('media/formbg.jpg');
+    width: 600px;
+    height: 250px;
+    margin: auto;
+}
+
+#text-title label{
+    font-size: 19px;
+}
+
+
+label {
+    font-weight: bolder;
+}
+
+#text {
+    width: 400px;
+    height: 120px;
+    text-align: left;
+}
+
+button {
+    background-color: green;
+    cursor: pointer;
+}
+
+.note {
+    width: 200px;
+    flex: none;
+    height: 250px;
+    background-image: url('media/notebg.png');
+    animation: fade 1.5s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-note {
+    position: relative;
+    top: 10%;
+    left: 5px;
+    font-weight: bold;
+    width: 80%;
+    height: 60%;
+    overflow-y: auto;
+}
+
+.date-note {
+    position: relative;
+    top: 20%;
+    left: 5px;
+}
+
+.time-note {
+    position: relative;
+    top: 23%;
+    left: 5px;
+}
+
+#notes-zone {
+    display: flex;
+    flex-flow: row-reverse;
+    max-width: 1024px;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.note .delete {
+    position: relative;
+    top: -160px;
+    right: -154px;
+}
+.delete{
+    background-image: url('media/delete.jpg');
+    transition: 1s;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.delete-fade-out {
+    opacity: 0;
+}
+
+.delete-fade-in {
+    opacity: 1;
+}
